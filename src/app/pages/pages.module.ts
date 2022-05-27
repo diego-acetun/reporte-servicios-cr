@@ -12,25 +12,25 @@ import { NgProgressModule } from 'ngx-progressbar';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'personal-cnoc',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-    // canActivate: [AuthGuard],
-    data: {
-      key: 'home'
-    }
-  },
-  {
-    path: 'ola',
-    loadChildren: () => import('./ola/ola.module').then(m => m.OlaModule),
-    // canActivate: [AuthGuard],
-    data: {
-      key: 'ola'
-    }
-  },
+  // {
+  //   path: 'home',
+  //   loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+  //   // canActivate: [AuthGuard],
+  //   data: {
+  //     key: 'home'
+  //   }
+  // },
+  // {
+  //   path: 'ola',
+  //   loadChildren: () => import('./ola/ola.module').then(m => m.OlaModule),
+  //   // canActivate: [AuthGuard],
+  //   data: {
+  //     key: 'ola'
+  //   }
+  // },
   {
     path: 'personal-cnoc',
     loadChildren: () => import('./personal-cnoc/personal-cnoc.module').then(m => m.PersonalCnocModule),
