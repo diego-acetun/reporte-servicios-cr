@@ -12,8 +12,8 @@ import { NgProgressModule } from 'ngx-progressbar';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'personal-cnoc',
-    pathMatch: 'full'
+    redirectTo: 'servicios-cr',
+    pathMatch: 'full',
   },
   // {
   //   path: 'home',
@@ -32,12 +32,15 @@ const routes: Routes = [
   //   }
   // },
   {
-    path: 'personal-cnoc',
-    loadChildren: () => import('./personal-cnoc/personal-cnoc.module').then(m => m.PersonalCnocModule),
+    path: 'servicios-cr',
+    loadChildren: () =>
+      import('./personal-cnoc/personal-cnoc.module').then(
+        (m) => m.PersonalCnocModule
+      ),
     // canActivate: [AuthGuard],
     data: {
-      key: 'personal-cnoc'
-    }
+      key: 'servicios-cr',
+    },
   },
 ];
 @NgModule({

@@ -9,8 +9,8 @@ import { NgProgressModule } from 'ngx-progressbar';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 const routes: Routes = [
-	{ path: '', component: PersonalCnocComponent },
-	{ path: '', redirectTo: 'personal-cnoc', pathMatch: 'full' },
+  { path: '', component: PersonalCnocComponent },
+  { path: '', redirectTo: 'servicios-cr', pathMatch: 'full' },
 ];
 
 
