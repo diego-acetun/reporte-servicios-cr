@@ -14,6 +14,8 @@ export class PersonalCNOCService {
   ) { }
 
   obtenerPersonalCNOC() {
-    return this.http.get(`${environment.apiURL}/personalCNOC/obtenerPersonalCNOC`);
+    return this.http.get(
+      `${environment.apiURL}/serviciosCR/obtenerServiciosCR`
+    );
   }
 }

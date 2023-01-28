@@ -34,7 +34,7 @@ const routes: Routes = [
   {
     path: 'servicios-cr',
     loadChildren: () =>
-      import('./personal-cnoc/personal-cnoc.module').then(
+      import('./servicios-cr/personal-cnoc.module').then(
         (m) => m.PersonalCnocModule
       ),
     // canActivate: [AuthGuard],

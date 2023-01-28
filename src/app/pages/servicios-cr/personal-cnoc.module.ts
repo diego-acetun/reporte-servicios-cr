@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { PersonalCnocComponent } from './personal-cnoc.component';
+import { PersonalCnocComponent } from './servicios-cr.component';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from 'src/app/material-design';
 import { MatPaginatorModule } from '@angular/material/paginator';
