@@ -6,14 +6,14 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class PersonalCNOCService {
+export class ServiciosCR {
 
   constructor(
     private http: HttpClient,
-    private queryService: HeaderService
+    // private queryService: HeaderService
   ) { }
 
-  obtenerPersonalCNOC() {
+  obtenerServiciosCR() {
     return this.http.get(
       `${environment.apiURL}/serviciosCR/obtenerServiciosCR`
     );

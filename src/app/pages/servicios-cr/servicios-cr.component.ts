@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Column, Search, Show, Record } from 'src/app/interfaces/interfaces';
 import { HeaderService } from 'src/app/services/header.service';
-import { PersonalCNOCService } from 'src/app/services/servicios-cr/servicios-cr.service';
+import { ServiciosCR } from 'src/app/services/servicios-cr/servicios-cr.service';
 
 @Component({
-  selector: 'app-personal-cnoc',
+  selector: 'app-servicios-cr',
   templateUrl: './servicios-cr.component.html',
   styleUrls: ['./servicios-cr.component.scss'],
 })
-export class PersonalCnocComponent implements OnInit {
+export class ServiciosCRComponent implements OnInit {
   public loading: boolean;
   public dataSource: any;
   public header: string;
@@ -22,7 +22,7 @@ export class PersonalCnocComponent implements OnInit {
 
   constructor(
     private _pageService: HeaderService,
-    private _personalCNOCService: PersonalCNOCService
+    private _serviciosCRService: ServiciosCR
   ) {
     this.loading = false;
     this.header = 'Servicios CR';
@@ -31,12 +31,12 @@ export class PersonalCnocComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.obtenerPersonalCNOC();
+    this.obtenerServiciosCR();
   }
 
-  obtenerPersonalCNOC() {
+  obtenerServiciosCR() {
     this.dataSource = [];
-    this._personalCNOCService.obtenerPersonalCNOC().subscribe(
+    this._serviciosCRService.obtenerServiciosCR().subscribe(
       ({ data, message }: any) => {
         this.order = data.order;
         this.updatedAt = Date();
