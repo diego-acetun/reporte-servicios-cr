@@ -67,56 +67,29 @@ export class ServiciosCRComponent implements OnInit {
           sortable: true,
           hidden: false,
         };
-      } else if (key === 'CONTACT_NAME') {
-        col = {
-          field: key,
-          text: key,
-          size: '154px',
-          frozen: false,
-          sortable: true,
-          hidden: false,
-        };
-      } else if (key === 'USER_ID') {
-        col = {
-          field: key,
-          text: key,
-          size: '65px',
-          frozen: false,
-          sortable: true,
-          hidden: false,
-        };
-      } else if (key === 'GROUP') {
-        col = {
-          field: key,
-          text: 'GRUPO',
-          size: '60px',
-          frozen: false,
-          sortable: true,
-          hidden: false,
-        };
-      } else if (key === 'LAST_NAME') {
-        col = {
-          field: key,
-          text: 'APELLIDOS',
-          size: '150px',
-          frozen: false,
-          sortable: true,
-          hidden: false,
-        };
-      } else if (key === 'FIRST_NAME') {
-        col = {
-          field: key,
-          text: 'NOMBRES',
-          size: '150px',
-          frozen: false,
-          sortable: true,
-          hidden: false,
-        };
-      } else if (key === 'EMAIL') {
+      } else if (key === 'DIRECCION_INSTALACION') {
         col = {
           field: key,
           text: key,
           size: '200px',
+          frozen: false,
+          sortable: true,
+          hidden: false,
+        };
+      } else if (key === 'TG_ANCHOBANDA_DEST') {
+        col = {
+          field: key,
+          text: key,
+          size: '170px',
+          frozen: false,
+          sortable: true,
+          hidden: false,
+        };
+      } else if (key === 'MEDIO_DE_FACTURACION') {
+        col = {
+          field: key,
+          text: key,
+          size: '170px',
           frozen: false,
           sortable: true,
           hidden: false,
